@@ -1,0 +1,39 @@
+@import './theme.less';
+
+.left-menu-horizontal-dark {
+  background-color: @dark-item-background !important;
+
+  .ant-menu-overflow-item {
+    .ant-menu-item-icon {
+      color: @light-text-color !important;
+    }
+
+    .ant-menu-title-content {
+      a {
+        color: @light-text-color !important;
+      }
+    }
+
+    &:hover {
+      color: @primary-dark-color !important;
+    }
+  }
+
+  .ant-menu-item-selected {
+    .ant-menu-item-icon {
+      svg {
+        color: @primary-dark-color;
+      }
+    }
+
+    .ant-menu-item-selected::after {
+      border-bottom: 2px solid @primary-dark-color !important;
+    }
+
+    .ant-menu-title-content {
+      a {
+        color: @primary-dark-color !important;
+      }
+    }
+  }
+}

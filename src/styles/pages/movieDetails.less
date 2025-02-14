@@ -1,0 +1,127 @@
+@import '../theme.less';
+
+.spinner {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-button {
+  margin: 10px !important;
+  width: 80px !important;
+  height: 40px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.back-button-dark {
+  background: @primary-dark-color !important;
+  border: 1px solid @primary-dark-color !important;
+}
+
+.movie-detail-title-dark {
+  color: @light-text-color !important;
+}
+
+.movie-detail-card {
+  border-radius: 10px !important;
+  margin: 0 8px 8px 8px !important;
+}
+
+.movie-detail-card-dark {
+  background-color: @dark-item-background !important;
+  border: 1px solid @dark-border-color !important;
+
+  .ant-descriptions-view {
+    border: 1px solid @dark-border-color !important;
+
+    .ant-descriptions-row {
+      border: 1px solid @dark-border-color !important;
+
+      .ant-descriptions-item-label {
+        background-color: @dark-background-color !important;
+        border-right: @dark-border-color !important;
+        color: @light-background-color !important;
+      }
+
+      .ant-descriptions-item-content {
+        color: @light-background-color !important;
+      }
+    }
+  }
+}
+
+.back-button:hover {
+  border-radius: 10px;
+}
+
+.details-image {
+  width: 150px;
+  height: 200px;
+}
+
+.movie-details-image-url {
+  width: 100px;
+  height: 100px;
+}
+
+.movie-edit-button-dark {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.movie-edit-button-dark {
+  background-color: @primary-dark-color !important;
+  border: 1px solid @primary-dark-color !important;
+}
+
+.movie-edit-button:hover {
+  border-radius: 10px;
+}
+
+@media (max-width: 576px) {
+  .back-button {
+    font-size: 10px !important;
+    width: 60px !important;
+    height: 30px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .movie-detail-title {
+    font-size: 20px !important;
+  }
+
+  .movie-detail {
+    .ant-descriptions-view {
+      .ant-descriptions-row {
+        .ant-descriptions-item-label {
+          font-size: 10px !important;
+        }
+        .ant-descriptions-item-content {
+          font-size: 10px !important;
+        }
+      }
+    }
+  }
+
+  .details-image {
+    width: 100px !important;
+    height: 150px !important;
+  }
+
+  .movie-details-image-url {
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  .movie-edit-button {
+    font-size: 10px !important;
+    height: 25px !important;
+  }
+}

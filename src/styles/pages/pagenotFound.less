@@ -1,0 +1,40 @@
+@import '../theme.less';
+
+.not-found-layout-dark {
+  background-color: @dark-background-color !important;
+
+  .ant-result-title {
+    color: @light-text-color !important;
+  }
+
+  .ant-result-subtitle {
+    color: @light-text-color !important;
+  }
+}
+
+.page-not-found-button-dark {
+  background-color: @primary-dark-color !important;
+  border: 1px solid @primary-dark-color !important;
+}
+
+.page-not-found-button:hover {
+  border-radius: 10px;
+}
+
+@media (max-width: 576px) {
+  .page-not-found {
+    .ant-result-title {
+      font-size: 20px !important;
+    }
+
+    .ant-result-subtitle {
+      font-size: 12px !important;
+    }
+  }
+
+  .page-not-found-button {
+    width: auto !important;
+    height: auto !important;
+    font-size: 10px !important;
+  }
+}

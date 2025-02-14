@@ -1,0 +1,200 @@
+@import './style.less';
+
+.background-light {
+  color: @dark-text-color !important;
+}
+
+.background-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.background-navbar-dark {
+  background: @dark-background-color !important;
+  color: @light-text-color !important;
+}
+
+.background {
+  min-height: 100vh !important;
+}
+
+.background-dark {
+  background: @dark-background-color !important;
+  color: @light-text-color !important;
+}
+
+.content {
+  width: 100%;
+}
+
+#breadcrumbs-portal {
+  display: flex;
+  padding: 0 16px;
+  align-items: center;
+  height: 50px;
+}
+
+.portal-dark {
+  .ant-breadcrumb-separator {
+    background-color: @dark-background-color !important;
+    color: @light-text-color !important;
+  }
+  background-color: @dark-background-color !important;
+  color: @light-text-color !important;
+}
+
+.breadcrumb-item {
+  text-transform: capitalize;
+  padding: 5px;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: @light-breadcrumb-background-color;
+  }
+}
+
+.breadcrumb-item-dark {
+  background-color: @dark-background-color;
+  color: @light-text-color !important;
+
+  &:hover {
+    background-color: @dark-breadcrumb-background-color;
+  }
+}
+
+.breadcrumb-item-active {
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 5px;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: @light-breadcrumb-background-color;
+  }
+}
+
+.breadcrumb-item-active.breadcrumb-item-dark {
+  &:hover {
+    background-color: @dark-breadcrumb-background-color;
+  }
+}
+
+.notification-error-dark {
+  background-color: @dark-item-background !important;
+  color: @light-text-color !important;
+
+  .ant-notification-notice-message {
+    color: @light-text-color !important;
+  }
+
+  .anticon-close-circle {
+    color: @error-dark-color !important;
+  }
+
+  .anticon-close {
+    color: @light-text-color !important;
+  }
+}
+
+.notification-success-dark {
+  background-color: @dark-item-background !important;
+  color: @light-text-color !important;
+
+  .ant-notification-notice-message {
+    color: @light-text-color !important;
+  }
+
+  .anticon-check-circle {
+    color: @success-dark-color !important;
+  }
+
+  .anticon-close {
+    color: @light-text-color !important;
+  }
+}
+
+.notification-info-dark {
+  background-color: @dark-item-background !important;
+  color: @light-text-color !important;
+
+  .ant-notification-notice-message {
+    color: @light-text-color !important;
+  }
+
+  .anticon-info-circle {
+    color: @info-dark-color !important;
+  }
+
+  .anticon-close {
+    color: @light-text-color !important;
+  }
+}
+
+@media (max-width: 576px) {
+  #breadcrumbs-portal {
+    height: 30px;
+  }
+
+  .breadcrumb-item {
+    font-size: 10px !important;
+  }
+
+  .ant-breadcrumb-separator {
+    height: 13px !important;
+  }
+
+  .breadcrumb-item-active {
+    font-size: 10px !important;
+  }
+
+  .notification-error {
+    .ant-notification-notice-content {
+      .ant-notification-notice-with-icon {
+        .ant-notification-notice-message {
+          font-size: 12px !important;
+        }
+
+        .ant-notification-notice-description {
+          font-size: 10px !important;
+        }
+      }
+    }
+  }
+
+  .notification-success {
+    .ant-notification-notice-content {
+      .ant-notification-notice-with-icon {
+        .anticon-close-circle {
+          font-size: 12px !important;
+        }
+
+        .ant-notification-notice-message {
+          font-size: 12px !important;
+        }
+
+        .ant-notification-notice-description {
+          font-size: 10px !important;
+        }
+      }
+    }
+  }
+
+  .notification-info {
+    .ant-notification-notice-content {
+      .ant-notification-notice-with-icon {
+        .anticon-close-circle {
+          font-size: 12px !important;
+        }
+
+        .ant-notification-notice-message {
+          font-size: 12px !important;
+        }
+
+        .ant-notification-notice-description {
+          font-size: 10px !important;
+        }
+      }
+    }
+  }
+}

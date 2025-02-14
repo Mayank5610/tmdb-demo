@@ -1,0 +1,54 @@
+{
+  "name": "tmdb",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/compatible": "5.1.4",
+    "@ant-design/icons": "5.6.0",
+    "@apollo/client": "3.12.8",
+    "@craco/craco": "7.1.0",
+    "@sentry/browser": "^8.53.0",
+    "antd": "5.23.3",
+    "axios": "1.7.9",
+    "cra-template": "1.2.0",
+    "craco-less": "3.0.1",
+    "customize-cra": "1.0.0",
+    "graphql": "16.10.0",
+    "history": "5.3.0",
+    "less": "4.2.2",
+    "less-loader": "12.2.0",
+    "lodash": "4.17.21",
+    "moment": "2.30.1",
+    "prettier": "3.4.2",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-router-dom": "7.1.4",
+    "react-scripts": "5.0.1",
+    "react-use": "17.6.0",
+    "workbox-webpack-plugin": "7.3.0"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "craco eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

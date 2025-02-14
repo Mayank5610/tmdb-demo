@@ -1,0 +1,318 @@
+@import '../theme.less';
+
+.spinner {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.movies-divider-dark {
+  color: @light-text-color !important;
+  border-top-color: @dark-border-color !important;
+}
+
+.movie-layout {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.movie-filter-wrapper {
+  width: 100% !important;
+  padding: 0 10px !important;
+}
+
+.filter-col {
+  margin-bottom: 10px !important;
+}
+
+.filter-col-btn {
+  display: flex !important;
+  flex: 0;
+}
+
+.sort-select {
+  width: 100% !important;
+  .ant-select-selector {
+    width: 100% !important;
+    border-radius: 10px !important;
+  }
+}
+
+.sort-select-dark {
+  .ant-select-selector {
+    background: @dark-item-background !important;
+    color: @light-text-color !important;
+    border: 1px solid @dark-border-color !important;
+  }
+
+  .ant-select-arrow {
+    color: @dark-background-color !important;
+  }
+}
+
+.sort-dropdown-dark {
+  background-color: @dark-item-background !important;
+}
+
+.sort-option-dark {
+  background: @dark-item-background !important;
+  color: @light-text-color !important;
+
+  &:hover {
+    background-color: @dark-background-color !important;
+  }
+}
+
+.sort-option-dark.ant-select-item-option-selected {
+  background-color: @primary-2-dark-color !important;
+}
+
+.category-select {
+  width: 100% !important;
+
+  .ant-select-selector {
+    width: 100% !important;
+    border-radius: 10px !important;
+  }
+}
+
+.category-select-dark {
+  .ant-select-selector {
+    background: @dark-item-background !important;
+    color: @light-text-color !important;
+    border: 1px solid @dark-border-color !important;
+  }
+
+  .ant-select-arrow {
+    color: @dark-background-color !important;
+  }
+}
+
+.category-dropdown-dark {
+  background-color: @dark-item-background !important;
+}
+
+.category-option-dark {
+  background: @dark-item-background !important;
+  color: @light-text-color !important;
+
+  &:hover {
+    background-color: @dark-background-color !important;
+  }
+}
+
+.category-option-dark.ant-select-item-option-selected {
+  background-color: @primary-2-dark-color !important;
+}
+
+.movies-search-field {
+  width: 100% !important;
+  border-radius: 10px !important;
+}
+
+.movies-search-field-dark {
+  background-color: @dark-item-background !important;
+  color: @light-text-color !important;
+  border: @dark-background-color !important;
+}
+
+.add-movie-button {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.add-movie-button-dark {
+  background-color: @primary-dark-color !important;
+  border: 1px solid @primary-dark-color !important;
+}
+
+.add-movie-button:hover {
+  border-radius: 10px;
+}
+
+.movie-row {
+  width: 100%;
+  height: 100vh;
+  margin: 0 !important;
+  padding: 0 5px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.movies-skeleton {
+  border: 1px solid #fff !important;
+  border-radius: 10px !important;
+  padding: 10px;
+}
+
+.movies-skeleton-dark {
+  border: 1px solid @dark-item-background !important;
+}
+
+.movie-delete-modal {
+  .ant-modal-content {
+    border-radius: 10px !important;
+  }
+}
+
+.movie-delete-modal {
+  .ant-modal-header {
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+  }
+}
+
+.movie-delete-modal-dark {
+  .ant-modal-content {
+    background-color: @dark-item-background !important;
+    border: 1px solid @dark-border-color !important;
+
+    .ant-modal-close {
+      color: @light-text-color !important;
+    }
+
+    .ant-modal-header {
+      background-color: @dark-item-background !important;
+      border-bottom: 1px solid @dark-border-color !important;
+
+      .ant-modal-title {
+        color: @light-text-color !important;
+      }
+    }
+
+    .ant-modal-body {
+      color: @light-text-color !important;
+    }
+
+    .ant-modal-footer {
+      border-top: 1px solid @dark-border-color !important;
+
+      .ant-space-horizontal {
+        .movie-modal-delete-button-dark {
+          background: @error-dark-color !important;
+          border: 1px solid @error-dark-color !important;
+        }
+
+        .movie-modal-cancel-button-dark {
+          background: @dark-item-background !important;
+          color: @light-text-color !important;
+          border: 1px solid @dark-border-color !important;
+        }
+      }
+    }
+  }
+}
+
+.movie-modal-delete-button:hover {
+  border-radius: 10px !important;
+}
+
+.movie-modal-cancel-button:hover {
+  border-radius: 10px;
+}
+
+@media (max-width: 576px) {
+  .movies-divider {
+    font-size: 12px !important;
+  }
+
+  .movies-search-field {
+    height: 25px !important;
+    font-size: 10px !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .sort-select {
+    height: 25px !important;
+
+    .ant-select-selector {
+      height: 25px !important;
+      font-size: 10px !important;
+      display: flex;
+      align-items: center;
+    }
+
+    .ant-select-arrow {
+      font-size: 10px !important;
+    }
+  }
+
+  .sort-option {
+    font-size: 10px !important;
+  }
+
+  .category-select {
+    height: 25px !important;
+
+    .ant-select-selector {
+      height: 25px !important;
+      font-size: 10px !important;
+      display: flex !important;
+      align-items: center !important;
+    }
+
+    .ant-select-arrow {
+      font-size: 10px !important;
+    }
+  }
+
+  .category-option {
+    font-size: 10px !important;
+  }
+
+  .add-movie-button {
+    height: 25px !important;
+    width: auto !important;
+    font-size: 10px !important;
+  }
+
+  .movie-delete-modal {
+    .ant-modal-content {
+      .ant-modal-close {
+        .ant-modal-close-x {
+          .ant-modal-close-icon {
+            font-size: 14px !important;
+          }
+        }
+      }
+
+      .ant-modal-header {
+        .ant-modal-title {
+          font-size: 14px !important;
+        }
+      }
+
+      .ant-modal-body {
+        font-size: 12px !important;
+      }
+
+      .ant-modal-footer {
+        .ant-space-horizontal {
+          .ant-space-item {
+            .movie-modal-delete-button {
+              height: 25px !important;
+              width: auto !important;
+              font-size: 10px !important;
+              display: flex !important;
+              align-items: center !important;
+              justify-content: center !important;
+            }
+
+            .movie-modal-cancel-button {
+              height: 25px !important;
+              width: auto !important;
+              font-size: 10px !important;
+              display: flex !important;
+              align-items: center !important;
+              justify-content: center !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

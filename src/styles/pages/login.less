@@ -1,0 +1,35 @@
+@import '../theme.less';
+
+.spinner {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-divider-dark {
+  color: @light-text-color !important;
+  border-top-color: @dark-border-color !important;
+}
+
+.home-movie-row {
+  margin: 0 !important;
+  padding: 0 5px;
+}
+
+.home-skeleton {
+  border: 1px solid #fff !important;
+  border-radius: 10px !important;
+  padding: 10px;
+}
+
+.home-skeleton-dark {
+  border: 1px solid @dark-item-background !important;
+}
+
+@media (max-width: 576px) {
+  .home-divider {
+    font-size: 12px !important;
+  }
+}
